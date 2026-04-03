@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Form | PHP + MySQL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <button class="theme-toggle" aria-label="Toggle dark mode">☀️</button>
+
+  <div class="form-card" id="formCard">
+    <div class="form-header">
+      <h2>Registration form</h2>
+      
+    </div>
+
+    <form id="userForm" method="POST">
+      
+      <div class="field">
+        <label>Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+      </div>
+      
+      <div class="field">
+        <label>Gmail</label>
+        <input type="email" id="gmail" name="gmail" required placeholder="you@gmail.com" />
+      </div>
+      <div class="field">
+        <label>Age</label>
+        <input type="text" id="age" name="age" min="1" max="120" required placeholder="Enter your age" />
+      </div>
+
+      <button type="submit" class="submit-btn">Submit now</button>
+    </form>
+  </div>
+
+
+  <div class="status-screen" id="statusScreen">
+    <div class="status-card">
+      <div class="loader"></div>
+      <h3>Submitting...</h3>
+      <p>Please wait, saving data...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
